@@ -16,6 +16,7 @@ public class MainProduct {
     public static void  main(String[] args) {
         Product prod[] = null;
         int a, n = 0;
+        boolean flag = true;
 
         // Thêm sản phẩm
         System.out.println("Nhập số sản phẩm muốn thêm:");
@@ -33,6 +34,21 @@ public class MainProduct {
         for (int i = 0; i < n; i++) {
             prod[i].inProduct();
         }
+
+        //B. Tạo đơn hàng
+        System.out.println("chọn sản để mua: ");
+        do {
+            System.out.println("Chọn sản phẩm muốn mua");
+            a = sc.nextInt();
+            for (int i = 0; i < n; i++) {
+                System.out.println(i+". "+prod[i].getName());
+                if (sc.nextInt() == i){
+
+                }
+            }
+            a = sc.nextInt();
+
+        }while (flag);
 
 
         //C. In ra sản phẩm đã hết hàng
