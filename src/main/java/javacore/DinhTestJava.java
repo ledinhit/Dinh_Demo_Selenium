@@ -1,3 +1,5 @@
+package javacore;
+
 import java.util.Scanner;
 
 public class DinhTestJava {
